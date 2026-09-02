@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jorge Lima's WDD 231 course home page featuring course information, web development studies, and responsive navigation.">
+    <meta name="author" content="Jorge Lima">
+    <title>Jorge Lima | WDD 231 Course Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <svg class="logo" viewBox="0 0 64 64" role="img" aria-labelledby="logo-title">
+                <title id="logo-title">Jorge Lima web development logo</title>
+                <rect x="4" y="4" width="56" height="56" rx="10"></rect>
+                <path d="M18 22h28M18 32h20M18 42h28" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"></path>
+            </svg>
+            <span>Jorge Lima</span>
+        </div>
+        <button id="menuButton" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <nav id="primaryNav" aria-label="Primary navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="chamber/">Chamber</a>
+            <a href="final/">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="home-grid">
+            <section class="card about">
+                <h2>About Me</h2>
+                <p>I am Jorge Lima, a Software Development student building my skills in HTML, CSS, JavaScript, and responsive web development. This course home page demonstrates my progress and provides a place to explore my coursework.</p>
+            </section>
+
+            <section class="card photo-card">
+                <h2>Student Photo</h2>
+                <img 
+                    src="images/student.jpg" 
+                    alt="Jorge Lima"
+                    width="754"
+                    height="850"
+                >
+            </section>
+
+            <section class="card certificate">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="filters" role="group" aria-label="Course filters">
+                    <button type="button" id="allCourses" class="filter active-filter">All</button>
+                    <button type="button" id="wddCourses" class="filter">WDD</button>
+                    <button type="button" id="cseCourses" class="filter">CSE</button>
+                </div>
+                <p class="credits">Credits Required: <strong id="creditTotal">0</strong></p>
+                <div id="courseCards" class="course-cards" aria-live="polite"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Jorge Lima • North Carolina, USA</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+</body>
+</html>
