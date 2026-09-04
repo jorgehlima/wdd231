@@ -47,13 +47,3 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-@media (min-width: 1000px) {
-    .home-grid {
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .course-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}

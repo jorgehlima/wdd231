@@ -7,7 +7,7 @@ const courses = [
         certificate: "Web and Computer Programming",
         description: "This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.",
         technology: ["Python"],
-        completed: false
+        completed: true
     },
     {
         subject: "WDD",
@@ -27,7 +27,7 @@ const courses = [
         certificate: "Web and Computer Programming",
         description: "CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call, debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.",
         technology: ["Python"],
-        completed: false
+        completed: true
     },
     {
         subject: "CSE",
@@ -47,7 +47,7 @@ const courses = [
         certificate: "Web and Computer Programming",
         description: "This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.",
         technology: ["HTML", "CSS", "JavaScript"],
-        completed: false
+        completed: true
     },
     {
         subject: "WDD",
