@@ -3,6 +3,7 @@
         padding: 1rem max(2%, calc((100% - 1100px) / 2));
         flex-wrap: nowrap;
         gap: 2rem;
+        
     }
 
     .menu-button {
@@ -28,7 +29,11 @@
 
     .home-grid {
         grid-template-columns: 2fr 1fr;
-        align-items: start;
+        align-items: stretch;
+    }
+
+    .home-grid .card {
+        height: 100%;
     }
 
     .about {

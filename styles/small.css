@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 :root {
     --primary: #16324f;
     --secondary: #1f7a8c;
@@ -19,6 +23,13 @@ body {
     color: var(--dark);
     background: var(--light);
     line-height: 1.6;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 header {
@@ -85,9 +96,10 @@ nav a.active {
 }
 
 main {
-    width: min(94%, 1100px);
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 0 2rem;
+    padding: 0 1rem;
 }
 
 h1 {
