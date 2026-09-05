@@ -76,7 +76,7 @@ function displayCourses(courseList) {
             <h3>${course.subject} ${course.number}: ${course.title}</h3>
             <p><strong>${course.credits} credits</strong></p>
             <p>${course.technology.join(" • ")}</p>
-            <p class="status">${course.completed ? "✓ Completed" : "In Progress / Not Completed"}</p>
+            <p class="status">${course.completed ? "✓ Completed" : "Not Completed"}</p>
         `;
 
         courseCards.appendChild(card);
