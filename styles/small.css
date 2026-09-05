@@ -223,6 +223,9 @@ footer {
   width: 32px;
   height: 32px;
   display: block;
+  background-color: white;
+  padding: 4px;
+  border-radius: 50%;
 }
 
 .social-links a:hover,
