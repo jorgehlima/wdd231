@@ -202,6 +202,7 @@ footer {
     padding: 1.25rem 1rem;
 }
 
+/*-- Social-link section --*/
 .social-links {
     display: flex;
     justify-content: center;
@@ -216,6 +217,12 @@ footer {
     padding: .4rem .7rem;
     border-radius: .3rem;
     text-decoration: none;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  display: block;
 }
 
 .social-links a:hover,
