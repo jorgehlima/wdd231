@@ -225,7 +225,7 @@ footer {
   display: block;
   background-color: white;
   padding: 4px;
-  border-radius: 50%;
+  border-radius: 50%; /* circular icons */
 }
 
 .social-links a:hover,
