@@ -21,7 +21,7 @@ const displayProphets = (prophets) => {
     const birthPlace = document.createElement("p");
     const portrait = document.createElement("img");
 
-    // Prophet's full name
+    // Full name
     fullName.textContent = `${prophet.name} ${prophet.lastname}`;
 
     // Date of birth
