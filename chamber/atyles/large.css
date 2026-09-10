@@ -30,13 +30,13 @@
         padding: 1rem 2rem;
     }
 
-    /* DIRECTORY GRID */
+    /* Directory grid */
 
     #members.grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* LIST VIEW */
+    /* List view */
 
     #members.list .member-card {
         display: grid;
@@ -56,7 +56,7 @@
         display: none;
     }
 
-    /* FOOTER */
+    /* Footer */
 
     .footer-container {
         display: grid;

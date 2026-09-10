@@ -33,7 +33,7 @@ img {
     height: auto;
 }
 
-/* HEADER */
+/* Header */
 
 header {
     background-color: var(--primary-color);
@@ -72,7 +72,7 @@ header {
     font-size: 0.85rem;
 }
 
-/* MOBILE MENU */
+/* Mobile menu */
 
 #menu {
     display: block;
@@ -135,7 +135,7 @@ h1 {
     color: var(--primary-color);
 }
 
-/* VIEW BUTTONS */
+/* View buttons */
 
 .view-buttons {
     display: flex;
@@ -161,7 +161,7 @@ h1 {
     color: var(--white);
 }
 
-/* MEMBER GRID */
+/* Member grid */
 
 #members.grid {
     display: grid;
@@ -201,7 +201,7 @@ h1 {
     font-weight: 700;
 }
 
-/* LIST VIEW */
+/* List view */
 
 #members.list {
     display: flex;
@@ -224,7 +224,7 @@ h1 {
     display: none;
 }
 
-/* FOOTER */
+/* Footer */
 
 footer {
     background-color: var(--primary-color);
