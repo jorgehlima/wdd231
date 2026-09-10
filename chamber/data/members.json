@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Cape Fear Technology Solutions",
+            "address": "105 Market Street, Wilmington, NC 28401",
+            "phone": "(910) 555-1001",
+            "website": "https://example.com",
+            "image": "cape-fear-tech.webp",
+            "membership": 3,
+            "description": "Technology consulting and managed IT services."
+        },
+        {
+            "name": "Coastal Coffee Company",
+            "address": "210 Front Street, Wilmington, NC 28401",
+            "phone": "(910) 555-1002",
+            "website": "https://example.com",
+            "image": "coastal-coffee.webp",
+            "membership": 2,
+            "description": "Locally roasted coffee and specialty beverages."
+        },
+        {
+            "name": "Port City Construction",
+            "address": "415 Oleander Drive, Wilmington, NC 28403",
+            "phone": "(910) 555-1003",
+            "website": "https://example.com",
+            "image": "port-city-construction.webp",
+            "membership": 3,
+            "description": "Residential and commercial construction services."
+        },
+        {
+            "name": "Atlantic Financial Group",
+            "address": "720 Market Street, Wilmington, NC 28401",
+            "phone": "(910) 555-1004",
+            "website": "https://example.com",
+            "image": "atlantic-financial.webp",
+            "membership": 2,
+            "description": "Financial planning and business consulting."
+        },
+        {
+            "name": "Cape Fear Family Dental",
+            "address": "825 College Road, Wilmington, NC 28403",
+            "phone": "(910) 555-1005",
+            "website": "https://example.com",
+            "image": "cape-fear-dental.webp",
+            "membership": 1,
+            "description": "Family and cosmetic dental services."
+        },
+        {
+            "name": "Coastal Web Design",
+            "address": "950 Military Cutoff Road, Wilmington, NC 28405",
+            "phone": "(910) 555-1006",
+            "website": "https://example.com",
+            "image": "coastal-web.webp",
+            "membership": 1,
+            "description": "Website development and digital marketing services."
+        },
+        {
+            "name": "Riverfront Realty",
+            "address": "110 Water Street, Wilmington, NC 28401",
+            "phone": "(910) 555-1007",
+            "website": "https://example.com",
+            "image": "riverfront-realty.webp",
+            "membership": 3,
+            "description": "Residential and commercial real estate services."
+        }
+    ]
+}
