@@ -130,6 +130,12 @@ main {
     padding: 1rem 0 2rem;
 }
 
+h1,
+h2,
+h3 {
+    font-family: "Merriweather", Georgia, serif;
+}
+
 h1 {
     text-align: center;
     color: var(--primary-color);
