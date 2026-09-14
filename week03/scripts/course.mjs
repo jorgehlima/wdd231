@@ -1,7 +1,6 @@
 const byuiCourse = {
   code: "WDD231",
   name: "Web Frontend Development I",
-
   sections: [
     {
       sectionNumber: 1,
