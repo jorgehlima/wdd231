@@ -2,7 +2,7 @@ const byuiCourse = {
   code: "WDD231",
   name: "Web Frontend Development I",
   sections: [
-    // Keep all of the original section objects here.
+
   ],
 
   changeEnrollment: function (sectionNum, add = true) {
