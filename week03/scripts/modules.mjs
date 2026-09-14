@@ -8,7 +8,6 @@ document.querySelector("#enrollStudent").addEventListener("click", function () {
   );
 
   byuiCourse.changeEnrollment(sectionNum);
-
   renderSections(byuiCourse.sections);
 });
 
@@ -18,7 +17,6 @@ document.querySelector("#dropStudent").addEventListener("click", function () {
   );
 
   byuiCourse.changeEnrollment(sectionNum, false);
-
   renderSections(byuiCourse.sections);
 });
 
