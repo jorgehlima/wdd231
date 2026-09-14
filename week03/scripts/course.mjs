@@ -6,15 +6,16 @@ const byuiCourse = {
   ],
 
   changeEnrollment: function (sectionNum, add = true) {
-  const section = this.sections.find(
-    (section) => section.sectionNum == sectionNum
-  );
+    const section = this.sections.find(
+      (section) => section.sectionNum == sectionNum
+    );
 
-  if (section && add) {
-    section.enrolled++;
-  } else if (section && !add) {
-    section.enrolled--;
+    if (section && add) {
+      section.enrolled++;
+    } else if (section && !add) {
+      section.enrolled--;
+    }
   }
-},
+};
 
 export default byuiCourse;
