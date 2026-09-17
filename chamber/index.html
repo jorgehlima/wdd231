@@ -92,28 +92,47 @@
     </header>
 
     <main>
-        <h1>Business Directory</h1>
+        <h1>Wilmington Chamber of Commerce</h1>
 
-        <div class="view-buttons">
-            <button
-                id="grid"
-                type="button"
-                class="selected"
-                aria-label="Display businesses in grid view"
+        <section class="hero">
+            <img
+                src="images/wilmington-hero.webp"
+                alt="Wilmington North Carolina waterfront"
+                width="1200"
+                height="600"
             >
-                Grid
-            </button>
+            <a class="join-button" href="join.html">Join the Chamber</a>
+        </section>
 
-            <button
-                id="list"
-                type="button"
-                aria-label="Display businesses in list view"
-            >
-                List
-            </button>
-        </div>
+        <section class="home-info">
+            <div class="events">
+                <h2>Events</h2>
 
-        <div id="members" class="grid"></div>
+                <!-- Current chamber events -->
+            </div>
+
+            <div class="weather">
+                <h2>Current Weather</h2>
+
+                <div id="current-weather">
+                    <!-- JavaScript inserts weather here -->
+                </div>
+
+                <h3>3-Day Forecast</h3>
+
+                <div id="forecast">
+                    <!-- JavaScript inserts forecast here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlight-cards">
+                <!-- JavaScript inserts 2–3 random members -->
+            </div>
+        </section>
     </main>
 
     <footer>
