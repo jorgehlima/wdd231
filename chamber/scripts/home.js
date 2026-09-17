@@ -5,7 +5,7 @@ const latitude = 34.21;
 const longitude = -77.89;
 
 // Replace this value with your OpenWeatherMap API key
-const apiKey = "YOUR_API_KEY";
+const apiKey = "8ac83492e539bfa12112453960e2ebfd";
 
 // OpenWeatherMap URLs
 const currentWeatherUrl =
