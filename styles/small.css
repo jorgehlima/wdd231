@@ -197,6 +197,179 @@ h2 {
     font-size: .9rem;
 }
 
+/* Chamber Home Page */
+
+/* Hero */
+.hero {
+    position: relative;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Join Chamber CTA */
+.join-button {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    background: var(--accent);
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: .4rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .25);
+}
+
+.join-button:hover,
+.join-button:focus-visible {
+    background: var(--white);
+    color: var(--primary);
+}
+
+/* Events and Weather */
+.home-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.events,
+.weather {
+    background: var(--white);
+    border: 1px solid #ccd6df;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+.event {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccd6df;
+}
+
+.event:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.event h3 {
+    margin-bottom: .25rem;
+    color: var(--primary);
+}
+
+.event p {
+    margin: .35rem 0;
+}
+
+/* Current Weather */
+#current-weather {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.weather-details p {
+    margin: .25rem 0;
+}
+
+#current-temp {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+#weather-description {
+    font-weight: 500;
+}
+
+.weather h3 {
+    color: var(--primary);
+}
+
+/* Three-Day Forecast */
+#forecast {
+    display: grid;
+    gap: .5rem;
+}
+
+#forecast p {
+    margin: 0;
+    padding: .6rem;
+    background: #e9ecef;
+    border-radius: .3rem;
+}
+
+/* Member Spotlights */
+.spotlights {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#spotlight-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background: var(--white);
+    border: 1px solid #ccd6df;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+.spotlight-card h3 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.spotlight-card img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: 150px;
+    margin: 0 auto 1rem;
+    object-fit: contain;
+}
+
+.spotlight-card p {
+    margin: .4rem 0;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin: .5rem 0;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.spotlight-card a:hover,
+.spotlight-card a:focus-visible {
+    text-decoration: none;
+}
+
+.membership-level {
+    font-weight: 700;
+}
+
 footer {
     background: var(--primary);
     color: var(--white);
