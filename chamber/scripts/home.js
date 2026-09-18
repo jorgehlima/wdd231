@@ -69,7 +69,7 @@ async function getForecast() {
   }
 }
 
-// Display the next three days of forecast data
+// next three days of forecast data
 function displayForecast(data) {
   forecastContainer.innerHTML = "";
 
@@ -129,30 +129,22 @@ async function getMembers() {
   }
 }
 
-// Display random Gold and Silver members
+// Gold and Silver members
 function displaySpotlights(data) {
   spotlightContainer.innerHTML = "";
 
-  // If members.json contains a "members" property,
-  // use it. Otherwise assume the JSON itself is an array.
   const members = data.members || data;
 
-  // Membership:
-  // 1 = Member
-  // 2 = Silver
-  // 3 = Gold
   const qualifiedMembers = members.filter(
     (member) =>
       member.membership === 2 ||
       member.membership === 3
   );
 
-  // Shuffle the qualifying members
   const shuffledMembers = [...qualifiedMembers].sort(
     () => Math.random() - 0.5
   );
 
-  // Display three random members
   const selectedMembers = shuffledMembers.slice(0, 3);
 
   selectedMembers.forEach((member) => {
@@ -205,8 +197,6 @@ function displaySpotlights(data) {
     spotlightContainer.appendChild(card);
   });
 }
-
-/* Run functions */
 
 getCurrentWeather();
 getForecast();
