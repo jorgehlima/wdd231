@@ -56,9 +56,11 @@ header {
 }
 
 .brand img {
-    width: 65px;
-    height: 65px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
     object-fit: contain;
+    display: block;
 }
 
 .site-name {
@@ -229,6 +231,8 @@ h1 {
 #members.list .member-card img {
     display: none;
 }
+
+/* Chamber Home Page */
 
 /* Hero */
 
