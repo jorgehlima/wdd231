@@ -4,7 +4,6 @@
 const latitude = 34.21;
 const longitude = -77.89;
 
-// Replace this value with your OpenWeatherMap API key
 const apiKey = "8ac83492e539bfa12112453960e2ebfd";
 
 // OpenWeatherMap URLs
@@ -14,7 +13,7 @@ const currentWeatherUrl =
 const forecastUrl =
   `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
 
-// Select weather HTML elements
+// weather HTML elements
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const weatherDescription = document.querySelector("#weather-description");
