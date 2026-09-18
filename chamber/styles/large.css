@@ -73,6 +73,27 @@
     .development-info {
         text-align: right;
     }
+
+    /* Chamber Home Page */
+    .home-info {
+    grid-template-columns: 2fr 1fr;
+    align-items: stretch;
+    }
+
+    #spotlight-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        margin-bottom: 2rem;
+    }
+
+    .join-button {
+        right: 2rem;
+        bottom: 2rem;
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+    }
 }
 
 
