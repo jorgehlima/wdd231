@@ -170,11 +170,20 @@ h2 {
     gap: .75rem;
 }
 
+/* Course cards clickable */
 .course-card {
     border: 1px solid #bcc8d2;
     border-radius: .4rem;
     padding: .85rem;
     background: #f9fbfc;
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.course-card:hover,
+.course-card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
 }
 
 .course-card.completed {
