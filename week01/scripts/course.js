@@ -107,6 +107,20 @@ function displayCourses(courseList) {
             <p class="status">${course.completed ? "✓ Completed" : "Not Completed"}</p>
         `;
 
+        card.setAttribute("tabindex", "0");
+        card.setAttribute("role", "button");
+
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
+        card.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                displayCourseDetails(course);
+            }
+        });
+
         courseCards.appendChild(card);
     });
 
