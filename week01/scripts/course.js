@@ -64,6 +64,7 @@ const courses = [
 const courseCards = document.querySelector("#courseCards");
 const creditTotal = document.querySelector("#creditTotal");
 const filterButtons = document.querySelectorAll(".filter");
+const courseDetails = document.querySelector("#course-details");
 
 function displayCourses(courseList) {
     courseCards.innerHTML = "";
