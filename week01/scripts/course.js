@@ -93,6 +93,13 @@ function displayCourseDetails(course) {
     });
 }
 
+/* Click outside the modal closes the box */
+courseDetails.addEventListener("click", (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
+
 function displayCourses(courseList) {
     courseCards.innerHTML = "";
 
