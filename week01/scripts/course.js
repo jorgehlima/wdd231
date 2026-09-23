@@ -93,9 +93,17 @@ function displayCourseDetails(course) {
     });
 }
 
-/* Click outside the modal closes the box */
+/* Out-side click behavior */
 courseDetails.addEventListener("click", (event) => {
-    if (event.target === courseDetails) {
+    const rect = courseDetails.getBoundingClientRect();
+
+    const clickedOutside =
+        event.clientX < rect.left ||
+        event.clientX > rect.right ||
+        event.clientY < rect.top ||
+        event.clientY > rect.bottom;
+
+    if (clickedOutside) {
         courseDetails.close();
     }
 });
