@@ -300,7 +300,7 @@ h1 {
 .weather h2,
 .spotlights h2 {
     margin-top: 0;
-    color: var(--primary-color);
+    color: var(--heading-color);
 }
 
 .event {
