@@ -4,6 +4,7 @@
     --accent-color: #fcbf49;
     --background-color: #f8f9fa;
     --surface-color: #ffffff;
+    --surface-alt-color: #e9ecef;
     --text-color: #212529;
     --white: #ffffff;
     --border-color: #cccccc;
@@ -161,7 +162,7 @@ h1 {
     padding: 0.75rem 1.5rem;
     border: 2px solid var(--primary-color);
     border-radius: 6px;
-    background-color: var(--white);
+    background-color: var(--surface-color);
     color: var(--primary-color);
     font-weight: 700;
     cursor: pointer;
@@ -184,7 +185,7 @@ h1 {
 
 .member-card {
     padding: 1rem;
-    background-color: var(--white);
+    background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     text-align: center;
@@ -230,7 +231,7 @@ h1 {
 }
 
 #members.list .member-card:nth-child(even) {
-    background-color: #e9ecef;
+    background-color: var(--surface-alt-color);
 }
 
 #members.list .member-card img {
@@ -288,7 +289,7 @@ h1 {
 .events,
 .weather {
     padding: 1rem;
-    background-color: var(--white);
+    background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
@@ -363,7 +364,7 @@ h1 {
 #forecast p {
     margin: 0;
     padding: 0.6rem;
-    background-color: #e9ecef;
+    background-color: var(--surface-alt-color);
     border-radius: 5px;
 }
 
@@ -381,7 +382,7 @@ h1 {
 
 .spotlight-card {
     padding: 1rem;
-    background-color: var(--white);
+    background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     text-align: center;
@@ -464,6 +465,7 @@ html.dark-mode {
 
     --background-color: #121212;
     --surface-color: #1e1e1e;
+    --surface-alt-color: #2a2a2a;
     --text-color: #f5f5f5;
     --border-color: #555555;
 }
