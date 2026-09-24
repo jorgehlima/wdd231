@@ -208,7 +208,7 @@ h1 {
 .member-card a {
     display: inline-block;
     margin-top: 0.5rem;
-    color: var(--primary-color);
+    color: var(--heading-color);
     font-weight: 700;
 }
 
