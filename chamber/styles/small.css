@@ -79,10 +79,13 @@ header {
 
 #menu {
     display: block;
+    margin-left: auto;
+    padding: 0.5rem;
     border: 0;
     background: transparent;
     color: var(--white);
     font-size: 2rem;
+    line-height: 1;
     cursor: pointer;
 }
 
