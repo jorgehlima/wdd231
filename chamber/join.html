@@ -10,8 +10,7 @@
 
     <meta
         name="description"
-        content="Welcome to the Wilmington Chamber of Commerce. Discover local events, weather, businesses, and opportunities to connect with our community."
-    >
+        content="Welcome to the Wilmington Chamber of Commerce. Discover local events, weather, businesses, and opportunities to connect with our community.">
     <meta name="author" content="Jorge Henrique de Souza Lima">
 
     <!-- Favicon -->
@@ -21,17 +20,14 @@
     <meta property="og:title" content="Wilmington Chamber of Commerce">
     <meta
         property="og:description"
-        content="Connect with Wilmington businesses, community events, resources, and opportunities through the Wilmington Chamber of Commerce."
-    >
+        content="Connect with Wilmington businesses, community events, resources, and opportunities through the Wilmington Chamber of Commerce.">
     <meta
         property="og:image"
-        content="https://jorgehlima.github.io/wdd231/chamber/images/chamber-logo.png"
-    >
+        content="https://jorgehlima.github.io/wdd231/chamber/images/chamber-logo.png">
     <meta
         property="og:url"
-        content="https://jorgehlima.github.io/wdd231/chamber/join.html"
->
-    >
+        content="https://jorgehlima.github.io/wdd231/chamber/join.html">
+
     <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
@@ -111,7 +107,278 @@
         </div>
     </header>
 
-    <main>
+    <main class="join-main">
+        <h1>Join the Wilmington Chamber of Commerce</h1>
+
+        <div class="join-layout">
+
+            <!-- Membership Application Form -->
+            <section class="application-section">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html" class="join-form">
+
+                    <label>
+                        First Name *
+                        <input
+                            type="text"
+                            name="first"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Last Name *
+                        <input
+                            type="text"
+                            name="last"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input
+                            type="text"
+                            name="organization-title"
+                            title="Enter your organizational title using at least seven letters, hyphens, or spaces"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z -]{7,}"
+                        >
+                    </label>
+
+                    <label>
+                        Email Address *
+                        <input
+                            type="email"
+                            name="email"
+                            title="Enter your email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Mobile Phone Number *
+                        <input
+                            type="tel"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Business / Organization Name *
+                        <input
+                            type="text"
+                            name="organization"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Membership Level *
+                        <select
+                            name="membership"
+                            title="Select a membership level"
+                            required
+                        >
+                            <option value="" disabled selected>
+                                Select a Membership Level
+                            </option>
+                            <option value="np">
+                                NP Membership
+                            </option>
+                            <option value="bronze">
+                                Bronze Membership
+                            </option>
+                            <option value="silver">
+                                Silver Membership
+                            </option>
+                            <option value="gold">
+                                Gold Membership
+                            </option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business / Organization Description
+                        <textarea
+                            name="description"
+                            title="Describe your business or organization"
+                            rows="6"
+                        ></textarea>
+                    </label>
+
+                    <input
+                        type="hidden"
+                        name="timestamp"
+                        id="timestamp"
+                    >
+
+                    <button type="submit" class="submit-button">
+                        Submit Application
+                    </button>
+
+                </form>
+            </section>
+
+            <!-- Membership Level Cards -->
+            <section class="membership-section">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>For nonprofit organizations.</p>
+                        <button
+                            type="button"
+                            class="membership-info"
+                            data-modal="np-modal"
+                        >
+                            Learn More
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>A great starting point for local businesses.</p>
+                        <button
+                            type="button"
+                            class="membership-info"
+                            data-modal="bronze-modal"
+                        >
+                            Learn More
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>Additional benefits and promotional opportunities.</p>
+                        <button
+                            type="button"
+                            class="membership-info"
+                            data-modal="silver-modal"
+                        >
+                            Learn More
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Our highest level of membership and visibility.</p>
+                        <button
+                            type="button"
+                            class="membership-info"
+                            data-modal="gold-modal"
+                        >
+                            Learn More
+                        </button>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- NP Membership Modal -->
+        <dialog id="np-modal" class="membership-modal">
+            <h2>NP Membership</h2>
+
+            <p><strong>Cost:</strong> No fee</p>
+
+            <p>
+                Designed for nonprofit organizations serving the
+                Wilmington community.
+            </p>
+
+            <h3>Benefits</h3>
+
+            <ul>
+                <li>Chamber directory listing</li>
+                <li>Networking opportunities</li>
+                <li>Community event invitations</li>
+                <li>Access to selected chamber resources</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+        </dialog>
+
+        <!-- Bronze Membership Modal -->
+        <dialog id="bronze-modal" class="membership-modal">
+            <h2>Bronze Membership</h2>
+
+            <p><strong>Cost:</strong> $150 per year</p>
+
+            <h3>Benefits</h3>
+
+            <ul>
+                <li>Business directory listing</li>
+                <li>Networking events</li>
+                <li>Business training opportunities</li>
+                <li>Member event discounts</li>
+                <li>Chamber newsletter updates</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+        </dialog>
+
+        <!-- Silver Membership Modal -->
+        <dialog id="silver-modal" class="membership-modal">
+            <h2>Silver Membership</h2>
+
+            <p><strong>Cost:</strong> $300 per year</p>
+
+            <h3>Benefits</h3>
+
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>Enhanced directory listing</li>
+                <li>Additional event discounts</li>
+                <li>Advertising opportunities</li>
+                <li>Priority registration for chamber events</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+        </dialog>
+
+        <!-- Gold Membership Modal -->
+        <dialog id="gold-modal" class="membership-modal">
+            <h2>Gold Membership</h2>
+
+            <p><strong>Cost:</strong> $500 per year</p>
+
+            <h3>Benefits</h3>
+
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Premium directory placement</li>
+                <li>Home page spotlight opportunities</li>
+                <li>Priority event sponsorship opportunities</li>
+                <li>Premium advertising opportunities</li>
+                <li>VIP chamber event invitations</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+        </dialog>
 
     </main>
 
