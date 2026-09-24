@@ -54,6 +54,7 @@ header {
     gap: 0.75rem;
     color: var(--white);
     text-decoration: none;
+    padding-top: 0.35rem; /*causes logo img to go up down*/
 }
 
 .brand img {
