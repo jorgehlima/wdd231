@@ -317,7 +317,7 @@ h1 {
 
 .event h3 {
     margin-bottom: 0.25rem;
-    color: var(--primary-color);
+    color: var(--heading-color);
 }
 
 .event p {
