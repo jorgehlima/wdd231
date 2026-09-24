@@ -352,7 +352,7 @@ h1 {
 }
 
 .weather h3 {
-    color: var(--primary-color);
+    color: var(--heading-color);
 }
 
 /* Forecast */
