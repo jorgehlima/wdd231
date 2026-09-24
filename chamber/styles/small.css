@@ -411,7 +411,7 @@ h1 {
 .spotlight-card a {
     display: inline-block;
     margin: 0.5rem 0;
-    color: var(--primary-color);
+    color: var(--heading-color);
     font-weight: 700;
 }
 
