@@ -456,3 +456,14 @@ footer {
 .social-links a:focus {
     color: var(--accent-color);
 }
+
+/* Dark Mode */
+
+html.dark-mode {
+    color-scheme: dark;
+
+    --background-color: #121212;
+    --surface-color: #1e1e1e;
+    --text-color: #f5f5f5;
+    --border-color: #555555;
+}
