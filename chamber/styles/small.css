@@ -424,6 +424,232 @@ h1 {
     font-weight: 700;
 }
 
+/* Join Page Section */
+
+.join-main {
+    width: min(100% - 2rem, 1200px);
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+}
+
+.join-main > h1 {
+    margin-bottom: 1.5rem;
+}
+
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Membership Application */
+
+.application-section,
+.membership-section {
+    padding: 1.25rem;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+}
+
+.application-section h2,
+.membership-section h2 {
+    margin-top: 0;
+    color: var(--heading-color);
+}
+
+.join-form {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.join-form label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 500;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    font: inherit;
+}
+
+.join-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Form focus */
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Submit Button */
+
+.submit-button {
+    padding: 0.85rem 1.25rem;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: var(--secondary-color);
+    color: #000;
+}
+
+/* Membership Cards */
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.5rem 1rem;
+    background-color: var(--surface-alt-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+
+    opacity: 0;
+    transform: translateY(25px);
+    animation: membership-entrance 0.7s ease-out forwards;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.membership-card h3 {
+    margin-top: 0;
+    color: var(--heading-color);
+}
+
+.membership-card p {
+    margin-bottom: 1rem;
+}
+
+/* Learn More Buttons */
+
+.membership-info {
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.membership-info:hover,
+.membership-info:focus {
+    background-color: var(--secondary-color);
+    color: #000;
+}
+
+/* Initial Membership Card Animation */
+
+@keyframes membership-entrance {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Membership Modals */
+
+.membership-modal {
+    width: min(90%, 500px);
+    max-height: 85vh;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    box-shadow: 0 8px 30px rgb(0 0 0 / 35%);
+}
+
+.membership-modal::backdrop {
+    background-color: rgb(0 0 0 / 65%);
+}
+
+.membership-modal h2,
+.membership-modal h3 {
+    color: var(--heading-color);
+}
+
+.membership-modal h2 {
+    margin-top: 0;
+}
+
+.membership-modal li {
+    margin-bottom: 0.5rem;
+}
+
+/* Modal Close Button */
+
+.close-modal {
+    margin-top: 1rem;
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    background-color: var(--secondary-color);
+    color: #000;
+}
+
+/* Reduced Motion Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+}
+
 /* Footer */
 
 footer {
