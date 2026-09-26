@@ -61,7 +61,7 @@ header {
 
 .brand img {
     display: block;
-    width: 220px;
+    width: 260px; /* Logo size */
     max-width: 100%;
     height: auto;
     object-fit: contain;
