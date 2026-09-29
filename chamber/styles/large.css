@@ -138,3 +138,27 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* Discover Page - Medium */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .discover-card img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 12px rgb(0 0 0 / 25%);
+    }
+}
