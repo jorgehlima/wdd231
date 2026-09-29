@@ -46,3 +46,28 @@ function displayPlaces(places) {
 
 displayPlaces(places);
 
+// Display visitor message
+const visitorMessage = document.querySelector("#visitor-message");
+
+const lastVisit = localStorage.getItem("lastVisit");
+const currentVisit = Date.now();
+
+if (!lastVisit) {
+  visitorMessage.textContent =
+    "Welcome! Let us know if you have any questions.";
+} else {
+  const difference = currentVisit - Number(lastVisit);
+  const millisecondsPerDay = 1000 * 60 * 60 * 24;
+  const daysBetweenVisits = Math.floor(difference / millisecondsPerDay);
+
+  if (daysBetweenVisits < 1) {
+    visitorMessage.textContent = "Back so soon! Awesome!";
+  } else if (daysBetweenVisits === 1) {
+    visitorMessage.textContent = "You last visited 1 day ago.";
+  } else {
+    visitorMessage.textContent =
+      `You last visited ${daysBetweenVisits} days ago.`;
+  }
+}
+
+localStorage.setItem("lastVisit", currentVisit);
