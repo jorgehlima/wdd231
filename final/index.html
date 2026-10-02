@@ -1,0 +1,269 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Raspberry Pi Project Hub helps beginners learn about Raspberry Pi computers, explore project ideas, and get started building projects.">
+    <meta name="author" content="Jorge Henrique de Souza Lima">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Raspberry Pi Project Hub">
+    <meta property="og:description"
+        content="Learn about Raspberry Pi computers, explore beginner-friendly projects, and discover what you need to get started.">
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+        content="https://jorgehlima.github.io/wdd231/final/">
+    <meta property="og:image"
+        content="https://jorgehlima.github.io/wdd231/final/images/raspberry-pi-hero.webp">
+
+    <title>Raspberry Pi Project Hub | Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a class="brand" href="index.html" aria-label="Raspberry Pi Project Hub home">
+                <img
+                    src="images/logo.webp"
+                    alt="Raspberry Pi Project Hub logo"
+                    width="80"
+                    height="80">
+                <span>Raspberry Pi Project Hub</span>
+            </a>
+
+            <button
+                id="menu"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation" aria-label="Main navigation">
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html" class="active" aria-current="page">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="getting-started.html">Getting Started</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <img
+                src="images/raspberry-pi-hero.webp"
+                alt="Raspberry Pi computer ready for a project"
+                width="1200"
+                height="600">
+
+            <div class="hero-content">
+                <h1>Build Something Amazing with Raspberry Pi</h1>
+
+                <p>
+                    Learn the basics, explore project ideas, and start building
+                    with one of the world's most popular single-board computers.
+                </p>
+
+                <a class="button" href="projects.html">
+                    Explore Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="intro">
+            <div class="section-container">
+                <h2>What Is a Raspberry Pi?</h2>
+
+                <div class="intro-layout">
+                    <div class="intro-text">
+                        <p>
+                            Raspberry Pi computers are small, affordable
+                            computers designed to make computing, programming,
+                            and electronics accessible to people of all
+                            experience levels.
+                        </p>
+
+                        <p>
+                            Despite their small size, Raspberry Pi computers
+                            can be used for many practical and creative
+                            projects. You can learn programming, build a home
+                            server, experiment with electronics, automate
+                            devices, create media systems, and much more.
+                        </p>
+
+                        <p>
+                            Raspberry Pi Project Hub is designed to help
+                            beginners understand the basics and discover
+                            projects they can start building.
+                        </p>
+                    </div>
+
+                    <img
+                        src="images/raspberry-pi-board.webp"
+                        alt="Raspberry Pi single-board computer"
+                        width="600"
+                        height="400"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Uses -->
+        <section class="uses">
+            <div class="section-container">
+                <h2>What Can You Build?</h2>
+
+                <p class="section-intro">
+                    Raspberry Pi computers can be used for projects ranging
+                    from simple beginner experiments to advanced home
+                    automation and networking systems.
+                </p>
+
+                <div class="use-cards">
+
+                    <article class="use-card">
+                        <img
+                            src="images/programming.webp"
+                            alt="Computer programming project"
+                            width="400"
+                            height="250"
+                            loading="lazy">
+
+                        <h3>Programming</h3>
+
+                        <p>
+                            Learn programming languages such as Python and
+                            JavaScript while creating practical applications.
+                        </p>
+                    </article>
+
+                    <article class="use-card">
+                        <img
+                            src="images/electronics.webp"
+                            alt="Raspberry Pi electronics project"
+                            width="400"
+                            height="250"
+                            loading="lazy">
+
+                        <h3>Electronics</h3>
+
+                        <p>
+                            Connect LEDs, sensors, displays, and other
+                            electronic components using the Raspberry Pi GPIO
+                            pins.
+                        </p>
+                    </article>
+
+                    <article class="use-card">
+                        <img
+                            src="images/networking.webp"
+                            alt="Home networking equipment"
+                            width="400"
+                            height="250"
+                            loading="lazy">
+
+                        <h3>Networking</h3>
+
+                        <p>
+                            Build home servers, network monitoring tools,
+                            private cloud systems, and other networking
+                            projects.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Started CTA -->
+        <section class="getting-started-cta">
+            <div class="section-container">
+                <h2>New to Raspberry Pi?</h2>
+
+                <p>
+                    Find out what hardware and software you need and learn the
+                    basic steps for preparing your Raspberry Pi for its first
+                    project.
+                </p>
+
+                <a class="button" href="getting-started.html">
+                    Getting Started
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <p>
+                    <strong>Raspberry Pi Project Hub</strong>
+                </p>
+                <p>
+                    A beginner-friendly resource for learning and building
+                    Raspberry Pi projects.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <a href="#" class="video-link">Project Demonstration Video</a>
+            </div>
+
+            <div class="footer-course">
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Jorge Henrique de Souza Lima
+                </p>
+
+                <p>
+                    WDD 231 | Web Frontend Development I
+                </p>
+
+                <p id="last-modified"></p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+```
