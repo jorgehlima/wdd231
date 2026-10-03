@@ -1,0 +1,412 @@
+:root {
+    --primary-color: #1b263b;
+    --accent-color: #c51a4a;
+    --background-color: #f5f7fa;
+    --surface-color: #ffffff;
+    --text-color: #212529;
+    --muted-text: #5f6670;
+    --border-color: #d6dbe1;
+    --white: #ffffff;
+}
+
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--accent-color);
+}
+
+button,
+a {
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: var(--primary-color);
+}
+
+.section-container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+/* Header */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(100% - 2rem, 1200px);
+    min-height: 80px;
+    margin-inline: auto;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    max-width: calc(100% - 60px);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.brand img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.brand span {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+/* Hamburger */
+
+#menu {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--white);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+#menu:hover,
+#menu:focus-visible {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+#menu:focus-visible {
+    outline: 3px solid var(--white);
+    outline-offset: 2px;
+}
+
+/* Navigation */
+
+#navigation {
+    position: absolute;
+    top: 100%;
+    left: -1rem;
+    right: -1rem;
+    z-index: 10;
+    display: none;
+    background-color: var(--primary-color);
+}
+
+#navigation.open {
+    display: block;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.navigation a.active,
+.navigation a[aria-current="page"] {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    min-height: 500px;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.hero > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.52);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: min(100% - 2rem, 700px);
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-content h1 {
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-size: clamp(2rem, 9vw, 3rem);
+}
+
+.hero-content p {
+    margin: 0 auto 1.5rem;
+    max-width: 600px;
+    font-size: 1.05rem;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.25rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 0.35rem;
+    background-color: var(--accent-color);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible {
+    border-color: var(--white);
+}
+
+.button:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+.hero .button:focus-visible {
+    outline-color: var(--white);
+}
+
+/* Introduction */
+
+.intro {
+    padding: 3rem 0;
+}
+
+.intro-layout {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+.intro-layout img {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+/* Common Uses */
+
+.uses {
+    padding: 3rem 0;
+    background-color: var(--surface-color);
+}
+
+.section-intro {
+    max-width: 750px;
+    margin-bottom: 2rem;
+}
+
+.use-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.use-card {
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--background-color);
+}
+
+.use-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.use-card h3 {
+    margin: 1.25rem 1.25rem 0.5rem;
+    font-size: 1.3rem;
+}
+
+.use-card p {
+    margin: 0;
+    padding: 0 1.25rem 1.5rem;
+}
+
+/* Call to action */
+
+.getting-started-cta {
+    padding: 3rem 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.getting-started-cta h2 {
+    color: var(--white);
+}
+
+.getting-started-cta p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+/* Footer */
+
+footer {
+    padding: 2rem 0;
+    background-color: #111827;
+    color: var(--white);
+}
+
+.footer-container {
+    display: grid;
+    gap: 1.5rem;
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+.footer-brand p,
+.footer-course p {
+    margin-bottom: 0.4rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+}
+
+.footer-links a {
+    color: var(--white);
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+    text-decoration-thickness: 2px;
+}
+
+.footer-course {
+    font-size: 0.9rem;
+}
+
+/* Accessibility */
+
+:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+/* Very Small Screens */
+
+@media screen and (max-width: 360px) {
+
+    .header-container,
+    .section-container,
+    .footer-container {
+        width: min(100% - 1.25rem, 1200px);
+    }
+
+    .brand {
+        gap: 0.4rem;
+    }
+
+    .brand img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .brand span {
+        font-size: 0.9rem;
+    }
+
+    #navigation {
+        left: -0.625rem;
+        right: -0.625rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
