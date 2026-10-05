@@ -1,0 +1,184 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Python Hello World",
+      "category": "programming",
+      "difficulty": "beginner",
+      "description": "Learn how to create and run a simple Python program on a Raspberry Pi.",
+      "hardware": "Raspberry Pi, monitor, keyboard, and mouse",
+      "estimatedTime": "30 minutes",
+      "image": "programming.webp"
+    },
+    {
+      "id": 2,
+      "name": "LED Controller",
+      "category": "electronics",
+      "difficulty": "beginner",
+      "description": "Control an LED using Python and the Raspberry Pi GPIO pins.",
+      "hardware": "Raspberry Pi, breadboard, LED, resistor, and jumper wires",
+      "estimatedTime": "45 minutes",
+      "image": "electronics.webp"
+    },
+    {
+      "id": 3,
+      "name": "Temperature Monitor",
+      "category": "electronics",
+      "difficulty": "beginner",
+      "description": "Read temperature data from a sensor connected to a Raspberry Pi.",
+      "hardware": "Raspberry Pi, temperature sensor, breadboard, and jumper wires",
+      "estimatedTime": "1 hour",
+      "image": "electronics.webp"
+    },
+    {
+      "id": 4,
+      "name": "Pi-hole Ad Blocker",
+      "category": "networking",
+      "difficulty": "intermediate",
+      "description": "Create a network-wide ad blocker using Pi-hole software.",
+      "hardware": "Raspberry Pi, microSD card, and network connection",
+      "estimatedTime": "1–2 hours",
+      "image": "networking.webp"
+    },
+    {
+      "id": 5,
+      "name": "Personal Web Server",
+      "category": "networking",
+      "difficulty": "intermediate",
+      "description": "Host a simple website from your Raspberry Pi using a web server.",
+      "hardware": "Raspberry Pi, storage, and network connection",
+      "estimatedTime": "2 hours",
+      "image": "networking.webp"
+    },
+    {
+      "id": 6,
+      "name": "Motion Detection Alarm",
+      "category": "electronics",
+      "difficulty": "intermediate",
+      "description": "Use a motion sensor to detect movement and trigger an alert.",
+      "hardware": "Raspberry Pi, PIR motion sensor, buzzer, and jumper wires",
+      "estimatedTime": "2 hours",
+      "image": "electronics.webp"
+    },
+    {
+      "id": 7,
+      "name": "Automatic Plant Monitor",
+      "category": "automation",
+      "difficulty": "intermediate",
+      "description": "Monitor soil moisture and determine when a plant needs water.",
+      "hardware": "Raspberry Pi, soil moisture sensor, and jumper wires",
+      "estimatedTime": "2–3 hours",
+      "image": "electronics.webp"
+    },
+    {
+      "id": 8,
+      "name": "Home Dashboard",
+      "category": "programming",
+      "difficulty": "intermediate",
+      "description": "Create a dashboard that displays useful information such as time, weather, and system status.",
+      "hardware": "Raspberry Pi and monitor",
+      "estimatedTime": "3 hours",
+      "image": "programming.webp"
+    },
+    {
+      "id": 9,
+      "name": "Media Center",
+      "category": "media",
+      "difficulty": "beginner",
+      "description": "Turn a Raspberry Pi into a media center for viewing locally available media.",
+      "hardware": "Raspberry Pi, microSD card, HDMI cable, and display",
+      "estimatedTime": "1 hour",
+      "image": "raspberry-pi-board.webp"
+    },
+    {
+      "id": 10,
+      "name": "Network File Server",
+      "category": "networking",
+      "difficulty": "intermediate",
+      "description": "Create a simple file server for sharing files across your home network.",
+      "hardware": "Raspberry Pi, external storage, and network connection",
+      "estimatedTime": "2–3 hours",
+      "image": "networking.webp"
+    },
+    {
+      "id": 11,
+      "name": "Python Quiz Game",
+      "category": "programming",
+      "difficulty": "beginner",
+      "description": "Build an interactive command-line quiz while practicing Python fundamentals.",
+      "hardware": "Raspberry Pi, monitor, and keyboard",
+      "estimatedTime": "1 hour",
+      "image": "programming.webp"
+    },
+    {
+      "id": 12,
+      "name": "Smart Lighting Controller",
+      "category": "automation",
+      "difficulty": "advanced",
+      "description": "Create a programmable lighting system controlled by a Raspberry Pi.",
+      "hardware": "Raspberry Pi, compatible lighting components, and control hardware",
+      "estimatedTime": "4–6 hours",
+      "image": "electronics.webp"
+    },
+    {
+      "id": 13,
+      "name": "System Resource Monitor",
+      "category": "programming",
+      "difficulty": "beginner",
+      "description": "Write a Python program that displays CPU, memory, and storage information.",
+      "hardware": "Raspberry Pi",
+      "estimatedTime": "1 hour",
+      "image": "programming.webp"
+    },
+    {
+      "id": 14,
+      "name": "Local Network Scanner",
+      "category": "networking",
+      "difficulty": "advanced",
+      "description": "Build a tool for identifying devices on your own local network.",
+      "hardware": "Raspberry Pi and network connection",
+      "estimatedTime": "3–4 hours",
+      "image": "networking.webp"
+    },
+    {
+      "id": 15,
+      "name": "Digital Clock Display",
+      "category": "electronics",
+      "difficulty": "beginner",
+      "description": "Display the current time on an LCD or small display connected to a Raspberry Pi.",
+      "hardware": "Raspberry Pi, compatible display, and jumper wires",
+      "estimatedTime": "1–2 hours",
+      "image": "electronics.webp"
+    },
+    {
+      "id": 16,
+      "name": "Scheduled Backup System",
+      "category": "automation",
+      "difficulty": "intermediate",
+      "description": "Automatically back up selected files to external storage on a schedule.",
+      "hardware": "Raspberry Pi and external storage",
+      "estimatedTime": "2 hours",
+      "image": "raspberry-pi-board.webp"
+    },
+    {
+      "id": 17,
+      "name": "Music Player",
+      "category": "media",
+      "difficulty": "beginner",
+      "description": "Configure a Raspberry Pi to play a locally stored music collection.",
+      "hardware": "Raspberry Pi, speakers or headphones, and storage",
+      "estimatedTime": "1–2 hours",
+      "image": "raspberry-pi-board.webp"
+    },
+    {
+      "id": 18,
+      "name": "Environmental Monitoring Station",
+      "category": "automation",
+      "difficulty": "advanced",
+      "description": "Collect temperature and humidity readings and display the measurements in a dashboard.",
+      "hardware": "Raspberry Pi, environmental sensors, breadboard, and jumper wires",
+      "estimatedTime": "4–6 hours",
+      "image": "electronics.webp"
+    }
+  ]
+}
