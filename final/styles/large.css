@@ -1,0 +1,55 @@
+@media screen and (min-width: 768px) {
+
+    /* Header and Navigation */
+
+    .header-container {
+        min-height: 110px;
+    }
+
+    .brand {
+        max-width: none;
+        gap: 0.8rem;
+    }
+
+    .brand img {
+        width: 88px;
+        height: 88px;
+    }
+
+    .brand span {
+        font-size: 1.25rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #navigation {
+        position: static;
+        display: block;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .navigation a {
+        padding: 0.8rem 1rem;
+        border-top: none;
+        border-radius: 0.3rem;
+    }
+
+    .navigation a:hover,
+    .navigation a:focus-visible {
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .navigation a.active,
+    .navigation a[aria-current="page"] {
+        background-color: var(--accent-color);
+        color: var(--white);
+    }
