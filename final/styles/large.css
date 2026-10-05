@@ -53,3 +53,127 @@
         background-color: var(--accent-color);
         color: var(--white);
     }
+
+    /* Hero */
+
+    .hero {
+        min-height: 520px;
+    }
+
+    .hero > img {
+        height: 520px;
+    }
+
+    .hero-content {
+        width: min(100% - 4rem, 800px);
+    }
+
+    .hero-content h1 {
+        font-size: 3.25rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    /* Introduction */
+
+    .intro {
+        padding: 4rem 0;
+    }
+
+    .intro-layout {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .intro-layout img {
+        height: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    /* Common Uses */
+
+    .uses {
+        padding: 4rem 0;
+    }
+
+    .use-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Getting Started */
+
+    .getting-started-cta {
+        padding: 4rem 0;
+    }
+
+    /* Footer */
+
+    .footer-container {
+        grid-template-columns: 1.4fr 0.8fr 1fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        align-items: flex-start;
+    }
+
+    .footer-course {
+        text-align: right;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    /* Header */
+
+    .brand img {
+        width: 96px;
+        height: 96px;
+    }
+
+    .brand span {
+        font-size: 1.4rem;
+    }
+
+    .navigation {
+        gap: 0.5rem;
+    }
+
+    .navigation a {
+        padding: 1rem 1.25rem;
+    }
+
+    /* Hero */
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero > img {
+        height: 560px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.75rem;
+    }
+
+    /* Main Sections */
+
+    .intro,
+    .uses,
+    .getting-started-cta {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .use-cards {
+        gap: 2rem;
+    }
+}
