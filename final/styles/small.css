@@ -313,6 +313,11 @@ header {
     padding: 0 1.25rem 1.5rem;
 }
 
+.projects-link {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 /* Call to action */
 
 .getting-started-cta {
