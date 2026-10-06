@@ -198,17 +198,22 @@ function formatLabel(value) {
     return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
-/* This will open project details when a View Details button is clicked */
+/* Handle project card buttons */
 projectsContainer.addEventListener("click", (event) => {
     const detailsButton = event.target.closest(".details-button");
+    const saveButton = event.target.closest(".save-button");
 
-    if (!detailsButton) {
-        return;
+    if (detailsButton) {
+        const projectId = Number(detailsButton.dataset.projectId);
+
+        showProjectDetails(projectId);
     }
 
-    const projectId = Number(detailsButton.dataset.projectId);
+    if (saveButton) {
+        const projectId = Number(saveButton.dataset.projectId);
 
-    showProjectDetails(projectId);
+        toggleSavedProject(projectId);
+    }
 });
 
 /* This will activate the X button */
