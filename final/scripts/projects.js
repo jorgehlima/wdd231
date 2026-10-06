@@ -15,7 +15,7 @@ async function getProjects() {
         }
 
         const data = await response.json();
-
+        
         allProjects = data.projects;
 
         displayProjects(allProjects);
@@ -31,8 +31,37 @@ async function getProjects() {
     }
 }
 
+function filterProjects() {
+    const selectedDifficulty = difficultyFilter.value;
+    const selectedCategory = categoryFilter.value;
+
+    const filteredProjects = allProjects.filter((project) => {
+        const matchesDifficulty =
+            selectedDifficulty === "all" ||
+            project.difficulty === selectedDifficulty;
+
+        const matchesCategory =
+            selectedCategory === "all" ||
+            project.category === selectedCategory;
+
+        return matchesDifficulty && matchesCategory;
+    });
+
+    displayProjects(filteredProjects);
+}
+
 function displayProjects(projects) {
     projectsContainer.innerHTML = "";
+
+    if (projects.length === 0) {
+        projectsContainer.innerHTML = `
+            <p class="no-projects">
+                No projects match the selected filters.
+            </p>
+        `;
+
+        return;
+    }
 
     projects.forEach((project) => {
         const card = document.createElement("article");
@@ -83,5 +112,8 @@ function displayProjects(projects) {
 function formatLabel(value) {
     return value.charAt(0).toUpperCase() + value.slice(1);
 }
+
+difficultyFilter.addEventListener("change", filterProjects);
+categoryFilter.addEventListener("change", filterProjects);
 
 getProjects();
