@@ -1,3 +1,9 @@
+/* importing functionality */
+import {
+    getSavedProjects,
+    saveProjects
+} from "./storage.js";
+
 const projectsContainer = document.querySelector("#project-cards");
 const difficultyFilter = document.querySelector("#difficulty-filter");
 const categoryFilter = document.querySelector("#category-filter");
