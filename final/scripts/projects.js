@@ -5,7 +5,6 @@ const projectDialog = document.querySelector("#project-details");
 const dialogContent = document.querySelector("#dialog-content");
 const closeDialogButton = document.querySelector("#close-dialog");
 
-
 const projectsUrl = "data/projects.json";
 
 let allProjects = [];
@@ -111,6 +110,52 @@ function displayProjects(projects) {
 
         projectsContainer.appendChild(card);
     });
+}
+
+/* Opens the project details modal */
+function showProjectDetails(projectId) {
+    const project = allProjects.find(
+        (project) => project.id === projectId
+    );
+
+    if (!project) {
+        return;
+    }
+
+    dialogContent.innerHTML = `
+        <h2>${project.name}</h2>
+
+        <img
+            src="images/${project.image}"
+            alt="${project.name}"
+            loading="lazy">
+
+        <p>
+            <strong>Category:</strong>
+            ${formatLabel(project.category)}
+        </p>
+
+        <p>
+            <strong>Difficulty:</strong>
+            ${formatLabel(project.difficulty)}
+        </p>
+
+        <p>
+            ${project.description}
+        </p>
+
+        <p>
+            <strong>Hardware Required:</strong>
+            ${project.hardware}
+        </p>
+
+        <p>
+            <strong>Estimated Time:</strong>
+            ${project.estimatedTime}
+        </p>
+    `;
+
+    projectDialog.showModal();
 }
 
 function formatLabel(value) {
