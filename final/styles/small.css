@@ -681,6 +681,60 @@ footer {
     justify-self: start;
 }
 
+/* Form Action Page */
+
+.form-action-hero {
+    padding: 3rem 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.form-action-hero h1 {
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-size: 2.25rem;
+}
+
+.form-action-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-results {
+    padding: 3rem 0;
+}
+
+.results-card {
+    max-width: 700px;
+    margin-inline: auto;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--surface-color);
+}
+
+#submitted-data {
+    margin: 1.5rem 0;
+}
+
+#submitted-data p {
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.results-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.secondary-button {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
 /* Accessibility */
 
 :focus-visible {
