@@ -9,6 +9,10 @@ const projectsUrl = "data/projects.json";
 
 let allProjects = [];
 
+/* Saved-project array */
+let savedProjects =
+    JSON.parse(localStorage.getItem("savedProjects")) || [];
+
 async function getProjects() {
     try {
         const response = await fetch(projectsUrl);
