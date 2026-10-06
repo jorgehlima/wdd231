@@ -175,6 +175,11 @@ projectsContainer.addEventListener("click", (event) => {
     showProjectDetails(projectId);
 });
 
+/* This will activate the X button */
+closeDialogButton.addEventListener("click", () => {
+    projectDialog.close();
+});
+
 difficultyFilter.addEventListener("change", filterProjects);
 categoryFilter.addEventListener("change", filterProjects);
 
