@@ -1,3 +1,4 @@
+/* First media query */
 @media screen and (min-width: 768px) {
 
     /* Header and Navigation */
@@ -154,7 +155,7 @@
     }
 }
 
-
+/* Second Media Query */
 @media screen and (min-width: 1000px) {
 
     /* Header */
@@ -201,5 +202,11 @@
 
     .use-cards {
         gap: 2rem;
+    }
+
+        /* Projects Page */
+
+    .project-cards {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
