@@ -191,10 +191,7 @@ function toggleSavedProject(projectId) {
         savedProjects.push(projectId);
     }
 
-    localStorage.setItem(
-        "savedProjects",
-        JSON.stringify(savedProjects)
-    );
+    saveProjects(savedProjects);
 
     filterProjects();
 }
