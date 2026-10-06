@@ -122,6 +122,7 @@ function displayProjects(projects) {
                                 : "Save Project"
                         }
                     </button>
+                </div>
             </div>
         `;
 
@@ -173,6 +174,24 @@ function showProjectDetails(projectId) {
     `;
 
     projectDialog.showModal();
+}
+
+/* Save/remove function */
+function toggleSavedProject(projectId) {
+    if (savedProjects.includes(projectId)) {
+        savedProjects = savedProjects.filter(
+            (id) => id !== projectId
+        );
+    } else {
+        savedProjects.push(projectId);
+    }
+
+    localStorage.setItem(
+        "savedProjects",
+        JSON.stringify(savedProjects)
+    );
+
+    filterProjects();
 }
 
 function formatLabel(value) {
