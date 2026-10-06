@@ -126,6 +126,32 @@
     .footer-course {
         text-align: right;
     }
+
+        /* Projects Page */
+
+    .projects-hero {
+        padding: 4rem 0;
+    }
+
+    .projects-hero h1 {
+        font-size: 3rem;
+    }
+
+    .project-filters {
+        grid-template-columns: auto minmax(180px, 240px)
+                               auto minmax(180px, 240px);
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .project-filters label {
+        margin-top: 0;
+    }
+
+    .project-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
