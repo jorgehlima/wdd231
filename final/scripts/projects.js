@@ -180,6 +180,13 @@ closeDialogButton.addEventListener("click", () => {
     projectDialog.close();
 });
 
+/* Close the modal when the backdrop is clicked */
+projectDialog.addEventListener("click", (event) => {
+    if (event.target === projectDialog) {
+        projectDialog.close();
+    }
+});
+
 difficultyFilter.addEventListener("change", filterProjects);
 categoryFilter.addEventListener("change", filterProjects);
 
