@@ -1,6 +1,10 @@
 const projectsContainer = document.querySelector("#project-cards");
+const difficultyFilter = document.querySelector("#difficulty-filter");
+const categoryFilter = document.querySelector("#category-filter");
 
 const projectsUrl = "data/projects.json";
+
+let allProjects = [];
 
 async function getProjects() {
     try {
