@@ -16,7 +16,9 @@ async function getProjects() {
 
         const data = await response.json();
 
-        displayProjects(data.projects);
+        allProjects = data.projects;
+
+        displayProjects(allProjects);
     } catch (error) {
         console.error("Unable to load project data:", error);
 
