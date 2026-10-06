@@ -103,12 +103,25 @@ function displayProjects(projects) {
                     ${project.estimatedTime}
                 </p>
 
-                <button
-                    class="details-button"
-                    type="button"
-                    data-project-id="${project.id}">
-                    View Details
-                </button>
+                <div class="project-actions">
+                    <button
+                        class="details-button"
+                        type="button"
+                        data-project-id="${project.id}">
+                        View Details
+                    </button>
+
+                    <button
+                        class="save-button"
+                        type="button"
+                        data-project-id="${project.id}"
+                        aria-pressed="${savedProjects.includes(project.id)}">
+                        ${
+                            savedProjects.includes(project.id)
+                                ? "Saved"
+                                : "Save Project"
+                        }
+                    </button>
             </div>
         `;
 
