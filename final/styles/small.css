@@ -482,6 +482,83 @@ footer {
     background-color: var(--surface-color);
 }
 
+.error-message {
+    padding: 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 0.3rem;
+    background-color: var(--surface-color);
+}
+
+/* No Project Results */
+
+.no-projects {
+    grid-column: 1 / -1;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--surface-color);
+    text-align: center;
+}
+
+/* Project Details Dialog */
+
+#project-details {
+    width: min(90%, 600px);
+    max-height: 85vh;
+    padding: 0;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    overflow: auto;
+}
+
+#project-details::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+#close-dialog {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+#close-dialog:hover,
+#close-dialog:focus-visible {
+    background-color: var(--accent-color);
+}
+
+#dialog-content {
+    padding: 1.5rem;
+}
+
+#dialog-content h2 {
+    padding-right: 3rem;
+}
+
+#dialog-content img {
+    width: 100%;
+    max-height: 300px;
+    margin-bottom: 1.5rem;
+    border-radius: 0.4rem;
+    object-fit: cover;
+}
+
+#dialog-content p:last-child {
+    margin-bottom: 0;
+}
+
 /* Accessibility */
 
 :focus-visible {
