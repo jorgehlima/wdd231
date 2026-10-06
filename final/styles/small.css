@@ -454,9 +454,16 @@ footer {
     margin-bottom: 0.75rem;
 }
 
-.details-button {
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.details-button,
+.save-button {
     display: inline-block;
-    margin-top: 0.5rem;
     padding: 0.7rem 1rem;
     border: 2px solid var(--accent-color);
     border-radius: 0.3rem;
@@ -466,20 +473,20 @@ footer {
     cursor: pointer;
 }
 
-.details-button:hover {
+.details-button:hover,
+.save-button:hover {
     filter: brightness(0.9);
 }
 
-.details-button:focus-visible {
+.details-button:focus-visible,
+.save-button:focus-visible {
     outline: 3px solid var(--primary-color);
     outline-offset: 3px;
 }
 
-.error-message {
-    padding: 1rem;
-    border: 1px solid var(--accent-color);
-    border-radius: 0.3rem;
-    background-color: var(--surface-color);
+.save-button[aria-pressed="true"] {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 .error-message {
