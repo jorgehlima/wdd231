@@ -162,6 +162,19 @@ function formatLabel(value) {
     return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
+/* This will open project details when a View Details button is clicked */
+projectsContainer.addEventListener("click", (event) => {
+    const detailsButton = event.target.closest(".details-button");
+
+    if (!detailsButton) {
+        return;
+    }
+
+    const projectId = Number(detailsButton.dataset.projectId);
+
+    showProjectDetails(projectId);
+});
+
 difficultyFilter.addEventListener("change", filterProjects);
 categoryFilter.addEventListener("change", filterProjects);
 
