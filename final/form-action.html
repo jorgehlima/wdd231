@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="View your Raspberry Pi project preferences and recommended next steps.">
+    <meta name="author" content="Jorge Lima">
+
+    <meta property="og:title"
+        content="Project Recommendation | Raspberry Pi Project Hub">
+    <meta property="og:description"
+        content="Review your Raspberry Pi project preferences and find your next project.">
+    <meta property="og:type" content="website">
+
+    <title>Project Recommendation | Raspberry Pi Project Hub</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/form-action.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a class="brand" href="index.html">
+                <img
+                    src="images/logo.webp"
+                    alt="Raspberry Pi Project Hub logo"
+                    width="96"
+                    height="96">
+                <span>Raspberry Pi Project Hub</span>
+            </a>
+
+            <button
+                id="menu"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation" aria-label="Main navigation">
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="getting-started.html">
+                            Getting Started
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-action-hero">
+            <div class="section-container">
+                <h1>Your Project Preferences</h1>
+                <p>
+                    Here is a summary of the Raspberry Pi project
+                    preferences you submitted.
+                </p>
+            </div>
+        </section>
+
+        <section class="form-results">
+            <div class="section-container">
+                <div class="results-card">
+                    <h2>Your Selections</h2>
+
+                    <div id="submitted-data"
+                        aria-live="polite">
+                    </div>
+
+                    <div class="results-actions">
+                        <a class="button"
+                            href="projects.html">
+                            Explore Projects
+                        </a>
+
+                        <a class="button secondary-button"
+                            href="getting-started.html">
+                            Change My Selections
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <p><strong>Raspberry Pi Project Hub</strong></p>
+                <p>A WDD 231 Final Project</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <a href="#">Project Video</a>
+            </div>
+
+            <div class="footer-course">
+                <p>
+                    &copy;
+                    <span id="current-year"></span>
+                    Jorge Lima
+                </p>
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p id="last-modified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
