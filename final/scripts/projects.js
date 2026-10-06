@@ -16,8 +16,7 @@ const projectsUrl = "data/projects.json";
 let allProjects = [];
 
 /* Saved-project array */
-let savedProjects =
-    JSON.parse(localStorage.getItem("savedProjects")) || [];
+let savedProjects = getSavedProjects();
 
 async function getProjects() {
     try {
