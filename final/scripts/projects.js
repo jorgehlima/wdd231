@@ -1,6 +1,10 @@
 const projectsContainer = document.querySelector("#project-cards");
 const difficultyFilter = document.querySelector("#difficulty-filter");
 const categoryFilter = document.querySelector("#category-filter");
+const projectDialog = document.querySelector("#project-details");
+const dialogContent = document.querySelector("#dialog-content");
+const closeDialogButton = document.querySelector("#close-dialog");
+
 
 const projectsUrl = "data/projects.json";
 
