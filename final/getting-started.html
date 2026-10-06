@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Learn what you need to get started with Raspberry Pi, including essential hardware, software, and beginner project recommendations.">
+    <meta name="author" content="Jorge Lima">
+
+    <meta property="og:title" content="Getting Started | Raspberry Pi Project Hub">
+    <meta property="og:description"
+        content="Learn what hardware and software you need to begin building Raspberry Pi projects.">
+    <meta property="og:type" content="website">
+
+    <title>Getting Started | Raspberry Pi Project Hub</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a class="brand" href="index.html">
+                <img src="images/logo.webp"
+                    alt="Raspberry Pi Project Hub logo"
+                    width="96"
+                    height="96">
+                <span>Raspberry Pi Project Hub</span>
+            </a>
+
+            <button id="menu"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation" aria-label="Main navigation">
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li>
+                        <a href="getting-started.html"
+                            class="active"
+                            aria-current="page">
+                            Getting Started
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="getting-started-hero">
+            <div class="section-container">
+                <h1>Getting Started with Raspberry Pi</h1>
+                <p>
+                    Prepare for your first Raspberry Pi project by learning
+                    about the basic hardware, software, and setup process.
+                </p>
+            </div>
+        </section>
+
+        <section class="getting-started-guide">
+            <div class="section-container">
+                <h2>What You Need</h2>
+
+                <div class="starter-cards">
+                    <article class="starter-card">
+                        <h3>Raspberry Pi</h3>
+                        <p>
+                            Choose a Raspberry Pi model that matches your
+                            project goals and budget.
+                        </p>
+                    </article>
+
+                    <article class="starter-card">
+                        <h3>Storage</h3>
+                        <p>
+                            Use a compatible microSD card or other supported
+                            storage device for the operating system and files.
+                        </p>
+                    </article>
+
+                    <article class="starter-card">
+                        <h3>Power Supply</h3>
+                        <p>
+                            Use a reliable power supply that meets the
+                            requirements of your Raspberry Pi model.
+                        </p>
+                    </article>
+
+                    <article class="starter-card">
+                        <h3>Display and Input</h3>
+                        <p>
+                            A monitor, keyboard, and mouse make the initial
+                            setup easier for beginners.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="setup-steps">
+            <div class="section-container">
+                <h2>Basic Setup Process</h2>
+
+                <ol class="setup-list">
+                    <li>
+                        <strong>Prepare your storage.</strong>
+                        Install a Raspberry Pi operating system on your
+                        microSD card or supported storage device.
+                    </li>
+
+                    <li>
+                        <strong>Connect your hardware.</strong>
+                        Connect your display, keyboard, mouse, and other
+                        required equipment.
+                    </li>
+
+                    <li>
+                        <strong>Power on the Raspberry Pi.</strong>
+                        Complete the initial operating system configuration.
+                    </li>
+
+                    <li>
+                        <strong>Update the system.</strong>
+                        Make sure the operating system and installed software
+                        are current before beginning a project.
+                    </li>
+
+                    <li>
+                        <strong>Choose your first project.</strong>
+                        Start with a beginner project that matches your
+                        interests and available equipment.
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="project-recommendation">
+            <div class="section-container">
+                <h2>Find a Project for You</h2>
+
+                <p>
+                    Tell us a little about your experience and interests.
+                    Your selections will be displayed on the confirmation
+                    page after you submit the form.
+                </p>
+
+                <form class="project-form"
+                    method="get"
+                    action="form-action.html">
+
+                    <fieldset>
+                        <legend>Your Experience</legend>
+
+                        <label for="experience">
+                            Raspberry Pi Experience
+                        </label>
+
+                        <select id="experience"
+                            name="experience"
+                            required>
+                            <option value="" disabled selected>
+                                Select your experience level
+                            </option>
+                            <option value="beginner">
+                                Beginner
+                            </option>
+                            <option value="intermediate">
+                                Intermediate
+                            </option>
+                            <option value="advanced">
+                                Advanced
+                            </option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Project Interests</legend>
+
+                        <p>Select the areas that interest you:</p>
+
+                        <label>
+                            <input type="checkbox"
+                                name="interest"
+                                value="programming">
+                            Programming
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                name="interest"
+                                value="electronics">
+                            Electronics
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                name="interest"
+                                value="networking">
+                            Networking
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                name="interest"
+                                value="automation">
+                            Automation
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                name="interest"
+                                value="media">
+                            Media
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferred Difficulty</legend>
+
+                        <label>
+                            <input type="radio"
+                                name="difficulty"
+                                value="beginner"
+                                required>
+                            Beginner
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                name="difficulty"
+                                value="intermediate">
+                            Intermediate
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                name="difficulty"
+                                value="advanced">
+                            Advanced
+                        </label>
+                    </fieldset>
+
+                    <label for="project-goal">
+                        What would you like to build?
+                    </label>
+
+                    <textarea id="project-goal"
+                        name="goal"
+                        rows="5"
+                        placeholder="Tell us about a Raspberry Pi project you would like to build."></textarea>
+
+                    <button class="button"
+                        type="submit">
+                        Get My Recommendation
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <p><strong>Raspberry Pi Project Hub</strong></p>
+                <p>A WDD 231 Final Project</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <a href="#">Project Video</a>
+            </div>
+
+            <div class="footer-course">
+                <p>&copy; <span id="current-year"></span> Jorge Lima</p>
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p id="last-modified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
