@@ -567,6 +567,120 @@ footer {
     margin-bottom: 0;
 }
 
+/* Getting Started Page */
+
+.getting-started-hero {
+    padding: 3rem 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.getting-started-hero h1 {
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-size: 2.25rem;
+}
+
+.getting-started-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.getting-started-guide,
+.setup-steps,
+.project-recommendation {
+    padding: 3rem 0;
+}
+
+.setup-steps {
+    background-color: var(--surface-color);
+}
+
+.starter-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.starter-card {
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--surface-color);
+}
+
+.starter-card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.starter-card p {
+    margin-bottom: 0;
+}
+
+.setup-list {
+    max-width: 800px;
+    padding-left: 1.5rem;
+}
+
+.setup-list li {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+/* Project Recommendation Form */
+
+.project-form {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin-top: 2rem;
+}
+
+.project-form fieldset {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--surface-color);
+}
+
+.project-form legend {
+    padding: 0 0.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.project-form label {
+    font-weight: 500;
+}
+
+.project-form select,
+.project-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.3rem;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    font: inherit;
+}
+
+.project-form textarea {
+    resize: vertical;
+}
+
+.project-form input[type="checkbox"],
+.project-form input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.project-form .button {
+    justify-self: start;
+}
+
 /* Accessibility */
 
 :focus-visible {
