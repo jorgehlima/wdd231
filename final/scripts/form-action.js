@@ -24,24 +24,36 @@ function displaySubmission() {
     submittedData.innerHTML = `
         <p>
             <strong>Experience:</strong>
-            ${formatLabel(experience)}
+            <span id="result-experience"></span>
         </p>
 
         <p>
             <strong>Project Interests:</strong>
-            ${interestList}
+            <span id="result-interests"></span>
         </p>
 
         <p>
             <strong>Preferred Difficulty:</strong>
-            ${formatLabel(difficulty)}
+            <span id="result-difficulty"></span>
         </p>
 
         <p>
             <strong>Project Goal:</strong>
-            ${goal ? goal : "Not provided"}
+            <span id="result-goal"></span>
         </p>
     `;
+
+    document.querySelector("#result-experience").textContent =
+        formatLabel(experience);
+
+    document.querySelector("#result-interests").textContent =
+        interestList;
+
+    document.querySelector("#result-difficulty").textContent =
+        formatLabel(difficulty);
+
+    document.querySelector("#result-goal").textContent =
+        goal || "Not provided";
 }
 
 displaySubmission();
