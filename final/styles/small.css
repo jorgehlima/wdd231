@@ -735,6 +735,47 @@ footer {
     background-color: var(--primary-color);
 }
 
+/* Attributions Page */
+
+.attributions-hero {
+    padding: 3rem 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.attributions-hero h1 {
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-size: 2.25rem;
+}
+
+.attributions-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.attributions-content {
+    padding: 3rem 0;
+}
+
+.attributions-content h2:not(:first-child) {
+    margin-top: 2.5rem;
+}
+
+.attribution-list {
+    max-width: 850px;
+    padding-left: 1.5rem;
+}
+
+.attribution-list li {
+    margin-bottom: 1rem;
+}
+
+.attribution-list a {
+    overflow-wrap: anywhere;
+}
+
 /* Accessibility */
 
 :focus-visible {
