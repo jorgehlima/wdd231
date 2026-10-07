@@ -84,6 +84,8 @@ function displayProjects(projects) {
             <img
                 src="images/${project.image}"
                 alt="${project.name}"
+                width="${project.imageWidth}"
+                height="${project.imageHeight}"
                 loading="lazy">
 
             <div class="project-card-content">
@@ -151,6 +153,8 @@ function showProjectDetails(projectId) {
         <img
             src="images/${project.image}"
             alt="${project.name}"
+            width="${project.imageWidth}"
+            height="${project.imageHeight}"
             loading="lazy">
 
         <p>
