@@ -1,0 +1,15 @@
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\bin\Debug\net10.0\HelloNet10.exe
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\bin\Debug\net10.0\HelloNet10.deps.json
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\bin\Debug\net10.0\HelloNet10.runtimeconfig.json
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\bin\Debug\net10.0\HelloNet10.dll
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\bin\Debug\net10.0\HelloNet10.pdb
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\obj\Debug\net10.0\HelloNet10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\obj\Debug\net10.0\HelloNet10.AssemblyInfoInputs.cache
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\obj\Debug\net10.0\HelloNet10.AssemblyInfo.cs
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\obj\Debug\net10.0\HelloNet10.csproj.CoreCompileInputs.cache
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\obj\Debug\net10.0\HelloNet10.sourcelink.json
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\obj\Debug\net10.0\HelloNet10.dll
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\obj\Debug\net10.0\refint\HelloNet10.dll
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\obj\Debug\net10.0\HelloNet10.pdb
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\obj\Debug\net10.0\HelloNet10.genruntimeconfig.cache
+C:\Users\jorge\Documents\Education\BYU\wdd231\HelloNet10\obj\Debug\net10.0\ref\HelloNet10.dll
